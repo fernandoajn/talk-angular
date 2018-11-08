@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Angular 6</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/angular.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal secondary">
+		<div class="slides">
+			<section>
+				<h2>ANGULAR</h2>
+				<!-- <img src="images/angular.svg" width="200" style="box-shadow: none;" class="fixed"> -->
+			</section>
+
+			<section>
+				<h4><a href="https://github.com/fernandoajn" target="_blank" style="color: #eee;">Fernando Augusto</a></h4>
+				<h4><a href="https://github.com/chillrx" target="_blank" style="color: #eee;">Victor Machado</a></h4>
+			</section>
+
+			<!-- O QUE SAO FRAMEWORKS? -->
+			<section>
+				<section>
+					Framework?
+				</section>
+
+				<section>
+					<p>"Na natureza nada se cria, nada se perde, tudo se transforma."</p>
+					<small>- Antoine Lavoisier</small>
+				</section>
+
+				<section>
+					<img src="images/angular_site.png" alt="">
+				</section>
+
+			</section>
+
+			<!-- NODE JS -->
+			<section>
+				<section>
+					Node.js
+				</section>
+
+				<section>
+					<p>"As an asynchronous event driven <b>JavaScript</b> runtime, Node is designed to build scalable network
+						applications."</p>
+					<small>- Nodejs.org</small>
+				</section>
+
+				<section>
+					<img src="images/node_site.png" alt="">
+				</section>
+
+				<section>
+					<img src="images/npm_site.png" alt="">
+				</section>
+
+			</section>
+
+			<section>
+				<section>
+					<h5>Primeiros passos</h5>
+				</section>
+
+				<section>
+					<p>Instalação</p>
+					<pre class="fragment fade-up"><code data-trim data-noescape>
+								$ npm install -g @angular/cli
+									</code></pre>
+				</section>
+
+				<section>
+					<p>Criar ambiente</p>
+					<pre class="fragment fade-up"><code data-trim data-noescape>
+									$ ng new myapp
+										</code></pre>
+					<small class="fragment fade-up">(Substituir <i>"app"</i> pelo nome)</small>
+				</section>
+
+				<section>
+					<p>Iniciar o servidor</p>
+					<pre class="fragment fade-up"><code data-trim data-noescape>
+										$ cd app
+											</code></pre>
+
+					<pre class="fragment fade-up"><code data-trim data-noescape>
+							$ ng serve
+								</code></pre>
+				</section>
+
+				<section>
+					<p>Parabéns! :)</p>
+					<img src="images/hello_world.png" width="700">
+					<small>Sua primeira aplicação Angular já está rodando!</small>
+				</section>
+			</section>
+
+			<section>
+				<section>Primeira Aplicação</section>
+				<section>Ambiente</section>
+				<section>Componentes</section>
+				<section>Rotas</section>
+				<section>Módulos, Importações e Exportações</section>
+				<section>Diretivas</section>
+				<section>Two-Databinding, Event Binding, Interpolação</section>
+				<section>ReactiveForms</section>
+			</section>
+
+			<section>
+				<h3>LUNCH TIME! :D</h3>
+			</section>
+
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			history: true,
+			backgroundTransition: 'slide',
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+
+</html>
